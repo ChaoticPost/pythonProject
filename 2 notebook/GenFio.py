@@ -1,8 +1,8 @@
 import math
 import random
 
-file_surnames = r'C:\Users\фвьшт\PycharmProjects\pythonProject\6_3\sun'
-file_names = r'C:\Users\фвьшт\PycharmProjects\pythonProject\6_3\name'
+file_surnames = r'C:\Users\фвьшт\PycharmProjects\pythonProject\2 notebook\sun'
+file_names = r'C:\Users\фвьшт\PycharmProjects\pythonProject\2 notebook\name'
 
 
 def generate_surname():
@@ -14,7 +14,7 @@ def generate_surname():
 
 def generate_full_name():
     name = random.choice(list(open(file_names, encoding="UTF-8"))).strip()
-    initial = random.choice('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЭЮЯ')
+    initial = random.choice('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯ')
     surname = generate_surname()
     return f"{name} {initial}. {surname}"
 
