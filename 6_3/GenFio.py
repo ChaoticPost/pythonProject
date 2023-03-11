@@ -14,7 +14,7 @@ def generate_surname():
 
 def generate_full_name():
     name = random.choice(list(open(file_names, encoding="UTF-8"))).strip()
-    initial = random.choice('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ')
+    initial = random.choice('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЭЮЯ')
     surname = generate_surname()
     return f"{name} {initial}. {surname}"
 
