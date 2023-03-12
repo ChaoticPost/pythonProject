@@ -55,7 +55,7 @@ def generate_sprite_map():
         sprite.save(f'sprite_{i}.png')
 
     # Сохраняем карту спрайтов в файл
-    #map_img.save('sprite_map.png')
+    map_img.save('sprite_map.png')
     img = Image.open('sprite_map.png')
     plt.imshow(img, cmap='binary')
     plt.show()
